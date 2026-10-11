@@ -1,0 +1,36 @@
+{
+  "name": "afterlight-game",
+  "private": true,
+  "version": "0.22.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "validate:story": "node scripts/validate-story-map.mjs",
+    "test:act-one": "node scripts/test-act-one.mjs",
+    "test:act-two": "node scripts/test-act-two.mjs",
+    "test:act-three": "node scripts/test-act-three.mjs",
+    "test:act-four": "node scripts/test-act-four.mjs",
+    "test:campaign": "npm run validate:story && npm run test:act-one && npm run test:act-two && npm run test:act-three && npm run test:act-four && npm run test:act-five && npm run test:characters && npm run test:city-scene && npm run test:decision-depth && npm run test:audio && npm run test:persistence && npm run test:decision-magnitudes",
+    "test:act-five": "node scripts/test-act-five.mjs",
+    "test:characters": "node scripts/test-character-beats.mjs",
+    "test:city-scene": "node scripts/test-city-scene.mjs",
+    "test:decision-depth": "node scripts/test-decision-depth.mjs",
+    "test:audio": "node scripts/test-audio.mjs",
+    "test:persistence": "node scripts/test-persistence.mjs",
+    "test:decision-magnitudes": "node scripts/test-decision-magnitudes.mjs"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "lucide-react": "^0.468.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "vite": "^6.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "typescript": "~5.6.3"
+  }
+}

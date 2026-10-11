@@ -1,0 +1,2011 @@
+{
+  "canonRevision": "2.0",
+  "campaignTargetEvents": 123,
+  "acts": [
+    {
+      "number": 1,
+      "title": "The Last Warm District",
+      "dayRange": "1–14",
+      "dramaticQuestion": "Who pays when the city saves itself?",
+      "actReveal": "A maintenance line and food shipments point to an unlisted relay facility."
+    },
+    {
+      "number": 2,
+      "title": "A City Divided",
+      "dayRange": "15–35",
+      "dramaticQuestion": "Who gets to know the truth, and who controls emergency power?",
+      "actReveal": "Jorel’s death was never verified; records point toward a living settlement on the northern ridge."
+    },
+    {
+      "number": 3,
+      "title": "The Signal Beneath the Ice",
+      "dayRange": "36–60",
+      "dramaticQuestion": "What does the darkness protect, and what does it conceal?",
+      "actReveal": "Hearth-9 survives beyond the ridge; records place Jorel at the outer relay, and DAWNLINE’s active safety cycle is independently corroborated."
+    },
+    {
+      "number": 4,
+      "title": "The Architecture of Night",
+      "dayRange": "61–90",
+      "dramaticQuestion": "Can the truth be made public without destroying the fragile system that keeps people alive?",
+      "actReveal": "Mara’s override saved a local heat loop during the emergency. DAWNLINE requires a witnessed human interlock and a coordinated test before any reset can be considered."
+    },
+    {
+      "number": 5,
+      "title": "Afterlight",
+      "dayRange": "Final crisis",
+      "dramaticQuestion": "Will the future belong to the people who survive it?",
+      "actReveal": "Vesper’s final coalition, Jorel’s rescue decision, and the accumulated evidence determine whether humanity restores natural sunlight, preserves artificial dawn, rebuilds under civilian or security rule, evacuates north, or suffers a catastrophic shutdown."
+    }
+  ],
+  "nodes": [
+    {
+      "id": "failing-grid",
+      "title": "A dark sector",
+      "act": 1,
+      "actTitle": "The Last Warm District",
+      "status": "implemented",
+      "trigger": "Campaign opening",
+      "decisionSpace": "Reroute, controlled blackout, or risky field repair.",
+      "connections": "Sets western-grid response; introduces Mara/Vale or creates blackout fallout.",
+      "liveCityFeed": "Default or blackout mood.",
+      "plannedBuild": null
+    },
+    {
+      "id": "hospital-appeal",
+      "title": "One more night of heat",
+      "act": 1,
+      "actTitle": "The Last Warm District",
+      "status": "implemented",
+      "trigger": "Early survival crisis",
+      "decisionSpace": "Guarantee hospital power, rotate it, or deny the request.",
+      "connections": "Changes population survival and the legitimacy of later emergency orders.",
+      "liveCityFeed": "Hospital lights reflect the selected allocation in a future scene variant.",
+      "plannedBuild": null
+    },
+    {
+      "id": "ration-ledger",
+      "title": "The missing ledger",
+      "act": 1,
+      "actTitle": "The Last Warm District",
+      "status": "implemented",
+      "trigger": "After first ration cycle",
+      "decisionSpace": "Publish the ledger, recover stock quietly, or punish the clerk.",
+      "connections": "Introduces Ilya/Nadia and creates ledger/depot evidence or suppression.",
+      "liveCityFeed": "Public-order and distribution visuals change.",
+      "plannedBuild": null
+    },
+    {
+      "id": "heat-theft",
+      "title": "The heat thieves",
+      "act": 1,
+      "actTitle": "The Last Warm District",
+      "status": "implemented",
+      "trigger": "Early south-ring crisis",
+      "decisionSpace": "Legalise the shelter, relocate residents, or raid them.",
+      "connections": "Builds Ilya/Vale standing and makes the southern ring stable, strained, or hostile.",
+      "liveCityFeed": "Shelter lights and civic tension respond.",
+      "plannedBuild": null
+    },
+    {
+      "id": "quiet-protest",
+      "title": "The silent queue",
+      "act": 1,
+      "actTitle": "The Last Warm District",
+      "status": "implemented",
+      "trigger": "Order pressure / ration queues",
+      "decisionSpace": "Hold an assembly, increase rations, or disperse the queue.",
+      "connections": "Determines Ilya/Vale relationship movement and whether Act II opens cooperatively.",
+      "liveCityFeed": "Unrest changes the plaza scene.",
+      "plannedBuild": null
+    },
+    {
+      "id": "foundry-fire",
+      "title": "Red metal",
+      "act": 1,
+      "actTitle": "The Last Warm District",
+      "status": "implemented",
+      "trigger": "Parts shortage / foundry failure",
+      "decisionSpace": "Protect workers or divert residential ventilation.",
+      "connections": "Creates a clean-industry or air-quality branch; affects array maintenance later.",
+      "liveCityFeed": "Smoke mood only if residential ventilation is diverted.",
+      "plannedBuild": null
+    },
+    {
+      "id": "night-garden",
+      "title": "A garden in the dark",
+      "act": 1,
+      "actTitle": "The Last Warm District",
+      "status": "implemented",
+      "trigger": "Food pressure / community opportunity",
+      "decisionSpace": "Fund the rooftop garden or return batteries to the clinic.",
+      "connections": "Starts the greenhouse thread and affects Ilya’s trust.",
+      "liveCityFeed": "Greenhouse mood if garden lights remain on.",
+      "plannedBuild": null
+    },
+    {
+      "id": "greenhouse-mold",
+      "title": "Something in the roots",
+      "act": 1,
+      "actTitle": "The Last Warm District",
+      "status": "implemented",
+      "trigger": "Act I agriculture crisis",
+      "decisionSpace": "Burn infected beds, study the mould, or harvest early.",
+      "connections": "Can preserve a hardy strain, lose the seed vault, or create a delayed food shortage.",
+      "liveCityFeed": "Greenhouse condition changes only after the outcome.",
+      "plannedBuild": null
+    },
+    {
+      "id": "radio-pirate",
+      "title": "A voice on the band",
+      "act": 1,
+      "actTitle": "The Last Warm District",
+      "status": "implemented",
+      "trigger": "Rumours intensify",
+      "decisionSpace": "Publish open data, jam the band, or invite the broadcaster to council.",
+      "connections": "Sets public-information policy and whether later archive release is credible.",
+      "liveCityFeed": "Radio lights/public-feed captions react.",
+      "plannedBuild": null
+    },
+    {
+      "id": "power-broker",
+      "title": "The copper compact",
+      "act": 1,
+      "actTitle": "The Last Warm District",
+      "status": "implemented",
+      "trigger": "Day 3+; generator expansion opportunity",
+      "decisionSpace": "Accept the guild compact, negotiate a public contract, or reject it.",
+      "connections": "Defines who controls repair contracts and how much leverage Vale/guilds gain.",
+      "liveCityFeed": "Industrial work lights reflect investment.",
+      "plannedBuild": null
+    },
+    {
+      "id": "mara-intake",
+      "title": "The engineer’s intake",
+      "act": 1,
+      "actTitle": "The Last Warm District",
+      "status": "implemented",
+      "trigger": "Immediately after failing-grid; required character introduction if not yet met",
+      "decisionSpace": "Let Mara brief the council in public or meet her alone.",
+      "connections": "Public briefing gives Nadia/Ilya a record; private briefing earns Mara trust but conceals details.",
+      "liveCityFeed": "Live feed overlays maintenance warning, not a new city mood.",
+      "plannedBuild": null
+    },
+    {
+      "id": "west-temperature-map",
+      "title": "A map of cold rooms",
+      "act": 1,
+      "actTitle": "The Last Warm District",
+      "status": "implemented",
+      "trigger": "Any west-grid condition; blackout choices add unique dialogue",
+      "decisionSpace": "Publish room-by-room temperatures or keep a strategic map restricted.",
+      "connections": "If published, Ilya gains evidence for hearings; if restricted, Vale gains operational advantage.",
+      "liveCityFeed": "The western district map adds lit/dark windows.",
+      "plannedBuild": null
+    },
+    {
+      "id": "council-evacuation-draft",
+      "title": "Seats on the last tram",
+      "act": 1,
+      "actTitle": "The Last Warm District",
+      "status": "implemented",
+      "trigger": "Energy ≤35 or blackout/ice-quake flags",
+      "decisionSpace": "Prepare voluntary evacuation lists or reject the premise of abandoning anyone.",
+      "connections": "Establishes early evacuation policy; feeds Vale’s later contingency list.",
+      "liveCityFeed": "Tram platforms appear occupied/empty in a later feed state.",
+      "plannedBuild": null
+    },
+    {
+      "id": "ilya-clinic-visit",
+      "title": "The clinic without stair lights",
+      "act": 1,
+      "actTitle": "The Last Warm District",
+      "status": "implemented",
+      "trigger": "blackout-policy OR hospital-appeal deny OR heat-theft raid",
+      "decisionSpace": "Meet the families with Ilya or send Vale to handle it.",
+      "connections": "Direct meeting warms Ilya; delegated security increases Vale’s influence but can deepen resentment.",
+      "liveCityFeed": "Clinic windows and crowd presence change.",
+      "plannedBuild": null
+    },
+    {
+      "id": "vale-night-patrol",
+      "title": "A patrol with no orders",
+      "act": 1,
+      "actTitle": "The Last Warm District",
+      "status": "implemented",
+      "trigger": "Public order below 55 or day ≥4",
+      "decisionSpace": "Give Vale narrow written limits or broad emergency discretion.",
+      "connections": "Creates constitutional-guardrail or expanded-security state.",
+      "liveCityFeed": "Searchlights/checkpoints may appear in the city feed.",
+      "plannedBuild": null
+    },
+    {
+      "id": "storehouse-manifest",
+      "title": "The shipment that was not there",
+      "act": 1,
+      "actTitle": "The Last Warm District",
+      "status": "implemented",
+      "trigger": "ration-ledger or copper-compact resolved",
+      "decisionSpace": "Trace the copper/food manifest or seal it as a clerical discrepancy.",
+      "connections": "Connects the ration scandal to the unlisted relay; first route toward Jorel.",
+      "liveCityFeed": "Storehouse bay lights and cargo movement update.",
+      "plannedBuild": null
+    },
+    {
+      "id": "frost-witness",
+      "title": "White cloth in the windows",
+      "act": 1,
+      "actTitle": "The Last Warm District",
+      "status": "implemented",
+      "trigger": "blackout-extended OR order ≤40",
+      "decisionSpace": "Interview residents publicly or classify the marks as sabotage.",
+      "connections": "Builds Ilya trust/evidence or expands Vale’s coercive authority.",
+      "liveCityFeed": "Distinct white cloth appears on dark-window silhouette layer.",
+      "plannedBuild": null
+    },
+    {
+      "id": "quill-archive-request",
+      "title": "A request for the old files",
+      "act": 1,
+      "actTitle": "The Last Warm District",
+      "status": "implemented",
+      "trigger": "ledger-published OR open-broadcast OR day ≥5",
+      "decisionSpace": "Grant Nadia a review team or demand a specific answer first.",
+      "connections": "Introduces Nadia’s archival rules; respectful access opens First Night documents.",
+      "liveCityFeed": "Archive status appears in city report, not the main skyline yet.",
+      "plannedBuild": null
+    },
+    {
+      "id": "ration-audit",
+      "title": "The second set of numbers",
+      "act": 1,
+      "actTitle": "The Last Warm District",
+      "status": "implemented",
+      "trigger": "Any ledger outcome; strongest on publish/quiet-ledger",
+      "decisionSpace": "Conduct an independent audit or let the guild audit itself.",
+      "connections": "Finds the diversion manifest, or records a compromised audit trail for later exposure.",
+      "liveCityFeed": "Food-distribution status changes.",
+      "plannedBuild": null
+    },
+    {
+      "id": "census-of-missing",
+      "title": "Names omitted from the census",
+      "act": 1,
+      "actTitle": "The Last Warm District",
+      "status": "implemented",
+      "trigger": "blackout/raid/punishment choices or ration audit",
+      "decisionSpace": "Restore missing residents to the official register or keep the count provisional.",
+      "connections": "Connects population loss to Jorel’s disappearance and later public-truth choices.",
+      "liveCityFeed": "Population-report UI changes; scene adds memorial lights.",
+      "plannedBuild": null
+    },
+    {
+      "id": "maintenance-shift-log",
+      "title": "The night the numbers changed",
+      "act": 1,
+      "actTitle": "The Last Warm District",
+      "status": "implemented",
+      "trigger": "engineers, sun-calibrated, or storehouse evidence",
+      "decisionSpace": "Recover the original shift log or prioritise a repair using incomplete records.",
+      "connections": "First documentary link between the Dawn Engine and DAWNLINE power routing.",
+      "liveCityFeed": "Core control lights show unexplained activity.",
+      "plannedBuild": null
+    },
+    {
+      "id": "night-watch-climax",
+      "title": "A signal in the maintenance ledger",
+      "act": 1,
+      "actTitle": "The Last Warm District",
+      "status": "implemented",
+      "trigger": "Day ≥7 and any two of ration/depot/maintenance evidence; otherwise a smaller clue appears",
+      "decisionSpace": "Trace the relay ID or file it for later.",
+      "connections": "Act I ends on a concrete lead; no one yet knows the network’s purpose.",
+      "liveCityFeed": "A line on the city map pulses toward Old Metro Line 9.",
+      "plannedBuild": null
+    },
+    {
+      "id": "seed-vault",
+      "title": "Seeds for a warmer world",
+      "act": 2,
+      "actTitle": "A City Divided",
+      "status": "implemented",
+      "trigger": "Food/energy trade-off",
+      "decisionSpace": "Protect the seed vault or restore trams.",
+      "connections": "Sets whether Vesper can sustain a recovery after the immediate crisis.",
+      "liveCityFeed": "Seed-vault status changes later greenhouse lighting.",
+      "plannedBuild": null
+    },
+    {
+      "id": "old-reactor",
+      "title": "The sleeping reactor",
+      "act": 2,
+      "actTitle": "A City Divided",
+      "status": "implemented",
+      "trigger": "Energy opportunity beyond perimeter",
+      "decisionSpace": "Attempt restart, strip for parts, or leave it sleeping.",
+      "connections": "Creates a delayed power source, practical parts, or a missed opportunity.",
+      "liveCityFeed": "Reactor beacon on the feed only if restart resolves successfully.",
+      "plannedBuild": null
+    },
+    {
+      "id": "outside-voice",
+      "title": "Someone at the gate",
+      "act": 2,
+      "actTitle": "A City Divided",
+      "status": "implemented",
+      "trigger": "Northern traveller reaches Vesper",
+      "decisionSpace": "Admit, treat/question, or refuse the traveller.",
+      "connections": "Creates an early northern-route clue and a moral record used by Ilya/Nadia.",
+      "liveCityFeed": "North-gate warmth and traveller silhouette change.",
+      "plannedBuild": null
+    },
+    {
+      "id": "ice-quake",
+      "title": "The ground moves",
+      "act": 2,
+      "actTitle": "A City Divided",
+      "status": "implemented",
+      "trigger": "Infrastructure event",
+      "decisionSpace": "Evacuate a tunnel, reinforce the coolant main, or wait.",
+      "connections": "Controls whether the underground expedition is safe and whether reactor repair parts survive.",
+      "liveCityFeed": "Ground fissures/steam alter industrial skyline.",
+      "plannedBuild": null
+    },
+    {
+      "id": "blackout-aftermath",
+      "title": "The dark has a street address",
+      "act": 1,
+      "actTitle": "The Last Warm District",
+      "status": "implemented",
+      "trigger": "blackout-policy and lights not restored",
+      "decisionSpace": "Restore clinic/stairwell lighting or extend the blackout.",
+      "connections": "Improves west-district condition or darkens additional districts; updates Ilya/Vale.",
+      "liveCityFeed": "Blackout scene persists or begins recovery.",
+      "plannedBuild": null
+    },
+    {
+      "id": "plaza-after-sirens",
+      "title": "Lanterns without flames",
+      "act": 1,
+      "actTitle": "The Last Warm District",
+      "status": "implemented",
+      "trigger": "Raid, hall cleared, clerk punished, or curfew choice",
+      "decisionSpace": "Hold an assembly or impose a curfew.",
+      "connections": "Civic compact vs hardened opposition branch.",
+      "liveCityFeed": "Crowd/curfew lighting changes.",
+      "plannedBuild": null
+    },
+    {
+      "id": "greenhouse-network",
+      "title": "A green light spreads",
+      "act": 1,
+      "actTitle": "The Last Warm District",
+      "status": "implemented",
+      "trigger": "garden-funded, mold-study, or seed-vault-saved",
+      "decisionSpace": "Link the grow-lamp network or return lamps to heating.",
+      "connections": "Creates self-sustaining food route or defers it for immediate heat.",
+      "liveCityFeed": "Greenhouse stays active or dims.",
+      "plannedBuild": null
+    },
+    {
+      "id": "northern-visitor-interview",
+      "title": "The traveller knows the name",
+      "act": 2,
+      "actTitle": "A City Divided",
+      "status": "implemented",
+      "trigger": "traveller-questioned OR traveller-admitted plus route-map clue",
+      "decisionSpace": "Trust the traveller’s account or verify it against Nadia’s archive.",
+      "connections": "Links outside-voice to the ridge settlement without revealing DAWNLINE too early.",
+      "liveCityFeed": "North-gate feed adds a map marker.",
+      "plannedBuild": null
+    },
+    {
+      "id": "quill-vault-access",
+      "title": "The shelf without a label",
+      "act": 2,
+      "actTitle": "A City Divided",
+      "status": "implemented",
+      "trigger": "Nadia met and respectful archive access OR independent audit",
+      "decisionSpace": "Give Nadia a small team or insist on a witness from the public council.",
+      "connections": "Opens a partial First Night transcript; oversight increases public confidence.",
+      "liveCityFeed": "Archive page appears in evidence dossier.",
+      "plannedBuild": null
+    },
+    {
+      "id": "vale-contingency-list",
+      "title": "The city that will be left behind",
+      "act": 2,
+      "actTitle": "A City Divided",
+      "status": "implemented",
+      "trigger": "vale-night-patrol with expanded discretion OR population pressure",
+      "decisionSpace": "Publish Vale’s evacuation list or let him keep it as an operational fallback.",
+      "connections": "A published list costs Vale trust but prevents secret use; secrecy strengthens his later coup path.",
+      "liveCityFeed": "Map shows districts pre-marked for evacuation.",
+      "plannedBuild": null
+    },
+    {
+      "id": "mara-black-box",
+      "title": "The black box has two clocks",
+      "act": 2,
+      "actTitle": "A City Divided",
+      "status": "implemented",
+      "trigger": "maintenance-shift-log evidence",
+      "decisionSpace": "Preserve the power log and lose repair time or overwrite it to stop a cascade.",
+      "connections": "Preservation adds DAWNLINE clue; overwrite keeps energy but costs future proof.",
+      "liveCityFeed": "Dawn Engine display gains a timestamp anomaly.",
+      "plannedBuild": null
+    },
+    {
+      "id": "jorel-trail",
+      "title": "A name on a cargo tag",
+      "act": 2,
+      "actTitle": "A City Divided",
+      "status": "implemented",
+      "trigger": "storehouse-manifest OR census-of-missing evidence",
+      "decisionSpace": "Trace Jorel’s tag north or follow the copper shipment first.",
+      "connections": "Creates one of two paths to Jorel’s survival record.",
+      "liveCityFeed": "Northbound cargo trace added to city feed map.",
+      "plannedBuild": null
+    },
+    {
+      "id": "clinic-blackout-case",
+      "title": "Three patients, one missing hour",
+      "act": 2,
+      "actTitle": "A City Divided",
+      "status": "planned",
+      "trigger": "blackout-impact-log OR hospital deny/rotate choices",
+      "decisionSpace": "Make the report public or use it to redesign emergency power priorities.",
+      "connections": "Public release builds accountability; private redesign builds practical resilience.",
+      "liveCityFeed": "Clinic becomes recovering only after allocation changes.",
+      "plannedBuild": "v1.0 campaign implementation"
+    },
+    {
+      "id": "white-cloth-windows",
+      "title": "The neighbourhood marks its own map",
+      "act": 2,
+      "actTitle": "A City Divided",
+      "status": "planned",
+      "trigger": "blackout-extended or census-of-missing",
+      "decisionSpace": "Negotiate a district repair rota or send security to remove markers.",
+      "connections": "Civic repair network vs escalation; gives different allies in Act IV.",
+      "liveCityFeed": "Window lights return district by district only after repairs.",
+      "plannedBuild": "v1.0 campaign implementation"
+    },
+    {
+      "id": "copper-guild-dispute",
+      "title": "Who owns the spare parts?",
+      "act": 2,
+      "actTitle": "A City Divided",
+      "status": "planned",
+      "trigger": "copper-compact OR public-contract",
+      "decisionSpace": "Accept guild control, renegotiate ownership, or seize the stock.",
+      "connections": "Determines access to the gantry workshop and who can sabotage/withhold parts.",
+      "liveCityFeed": "Foundry and repair-yard visuals update.",
+      "plannedBuild": "v1.0 campaign implementation"
+    },
+    {
+      "id": "repair-or-sacrifice",
+      "title": "The coolant main splits",
+      "act": 2,
+      "actTitle": "A City Divided",
+      "status": "planned",
+      "trigger": "ice-quake plus old-reactor or energy ≤30",
+      "decisionSpace": "Save hospital coolant or reactor containment.",
+      "connections": "Branches later power capacity and public-health losses; neither choice is free.",
+      "liveCityFeed": "North causeway damage state changes.",
+      "plannedBuild": "v1.0 campaign implementation"
+    },
+    {
+      "id": "public-hearing",
+      "title": "A hearing with the doors open",
+      "act": 2,
+      "actTitle": "A City Divided",
+      "status": "implemented",
+      "trigger": "ledger published OR audit complete OR public assembly held",
+      "decisionSpace": "Allow sworn testimony or restrict the hearing to technical officials.",
+      "connections": "Ilya/Nadia trust and public knowledge become durable campaign state.",
+      "liveCityFeed": "Crowd gathers in a civic space.",
+      "plannedBuild": null
+    },
+    {
+      "id": "hidden-depot-access",
+      "title": "The door beneath the storehouse",
+      "act": 2,
+      "actTitle": "A City Divided",
+      "status": "implemented",
+      "trigger": "ration-diversion-ledger OR depot manifest + Nadia access",
+      "decisionSpace": "Enter with a public warrant or send a covert team.",
+      "connections": "Public entry builds legitimacy; covert entry may get Jorel’s record sooner but risks Vale’s discovery.",
+      "liveCityFeed": "A sealed industrial hatch becomes visible.",
+      "plannedBuild": null
+    },
+    {
+      "id": "ledger-second-copy",
+      "title": "The copy that left the city",
+      "act": 2,
+      "actTitle": "A City Divided",
+      "status": "implemented",
+      "trigger": "hidden depot accessed or traveller route verified",
+      "decisionSpace": "Recover a courier copy or protect the courier from prosecution.",
+      "connections": "Provides the second independent proof needed for the Northworks/relay link.",
+      "liveCityFeed": "Courier route appears on the city map.",
+      "plannedBuild": null
+    },
+    {
+      "id": "conservatory-seed-test",
+      "title": "Something grows without the lamps",
+      "act": 2,
+      "actTitle": "A City Divided",
+      "status": "planned",
+      "trigger": "hardy strain sample OR seed vault saved",
+      "decisionSpace": "Run a controlled trial or distribute seed stock early.",
+      "connections": "Controlled trial is safer; early distribution improves food but risks contamination.",
+      "liveCityFeed": "Tiny greenhouse lights grow or are quarantined.",
+      "plannedBuild": "v1.0 campaign implementation"
+    },
+    {
+      "id": "winter-vote",
+      "title": "Emergency rule, one more month",
+      "act": 2,
+      "actTitle": "A City Divided",
+      "status": "implemented",
+      "trigger": "public-hearing + Vale standing; fallback on order ≤30",
+      "decisionSpace": "Renew emergency powers with oversight or set an end date and civilian review.",
+      "connections": "Sets a major legitimacy flag used by Iron Winter/People’s Dawn outcomes.",
+      "liveCityFeed": "Civic hall light status reflects vote.",
+      "plannedBuild": null
+    },
+    {
+      "id": "security-confrontation",
+      "title": "Orders from two offices",
+      "act": 2,
+      "actTitle": "A City Divided",
+      "status": "planned",
+      "trigger": "vale-contingency-list kept secret OR security expanded",
+      "decisionSpace": "Back Vale’s unilateral command or require joint civilian/technical authorisation.",
+      "connections": "Sets the security chain-of-command for the Act IV siege.",
+      "liveCityFeed": "Checkpoint deployment changes.",
+      "plannedBuild": "v1.0 campaign implementation"
+    },
+    {
+      "id": "signal-below",
+      "title": "A signal below",
+      "act": 2,
+      "actTitle": "A City Divided",
+      "status": "implemented",
+      "trigger": "Line 9 transmitter found; unlocked after investigation opportunity",
+      "decisionSpace": "Send a science team or seal the tunnel.",
+      "connections": "Introduces Elias, evidence fragments and the investigation route.",
+      "liveCityFeed": "Signal anomaly mood.",
+      "plannedBuild": null
+    },
+    {
+      "id": "signal-echo",
+      "title": "The forecast from thirteen years ago",
+      "act": 2,
+      "actTitle": "A City Divided",
+      "status": "implemented",
+      "trigger": "signal-investigated and not cut/decoded",
+      "decisionSpace": "Decode the archive, broadcast coordinates, or cut the transmitter.",
+      "connections": "Evidence can become a shared schedule or a lost lead; alters Elias/Ilya standing.",
+      "liveCityFeed": "Aurora/atmospheric anomaly mood.",
+      "plannedBuild": null
+    },
+    {
+      "id": "glass-sky",
+      "title": "The glass sky",
+      "act": 3,
+      "actTitle": "The Signal Beneath the Ice",
+      "status": "implemented",
+      "trigger": "Technology threshold; observatory anomaly",
+      "decisionSpace": "Power a full scan or archive early readings.",
+      "connections": "Creates explicit atmospheric-window evidence required for the late pulse.",
+      "liveCityFeed": "Sky scan gains a visible contour.",
+      "plannedBuild": null
+    },
+    {
+      "id": "last-transmission",
+      "title": "A message from the ridge",
+      "act": 3,
+      "actTitle": "The Signal Beneath the Ice",
+      "status": "implemented",
+      "trigger": "signal-investigated and day ≥6",
+      "decisionSpace": "Coordinate the experiment or protect power at home.",
+      "connections": "Creates ridge alliance or isolation; alliance gives later reset options.",
+      "liveCityFeed": "A distant relay light answers.",
+      "plannedBuild": null
+    },
+    {
+      "id": "rook-confession",
+      "title": "The fragment he did not report",
+      "act": 3,
+      "actTitle": "The Signal Beneath the Ice",
+      "status": "planned",
+      "trigger": "Elias met and line-9 evidence discovered",
+      "decisionSpace": "Let Elias publish his withheld fragment or require a controlled verification.",
+      "connections": "Trust opens quicker decoding; distrust adds a verification event but does not remove the clue.",
+      "liveCityFeed": "Signal waveform reveals a missing segment.",
+      "plannedBuild": "v1.0 campaign implementation"
+    },
+    {
+      "id": "signal-phase",
+      "title": "Nine hours, not nine words",
+      "act": 3,
+      "actTitle": "The Signal Beneath the Ice",
+      "status": "planned",
+      "trigger": "line-9-transmitter-pulse or dawnline-schedule",
+      "decisionSpace": "Sync the transmitter against local array logs or a radio telescope.",
+      "connections": "Confirms period and timing; both routes produce evidence with different resource costs.",
+      "liveCityFeed": "Aurora pulses on a nine-hour cycle.",
+      "plannedBuild": "v1.0 campaign implementation"
+    },
+    {
+      "id": "ridge-map",
+      "title": "Coordinates under the frost",
+      "act": 3,
+      "actTitle": "The Signal Beneath the Ice",
+      "status": "implemented",
+      "trigger": "northern-route-map OR signal schedule decoded",
+      "decisionSpace": "Use traveller map or derive a route from the signal.",
+      "connections": "Determines expedition hazards and whether the team trusts the northern beacon.",
+      "liveCityFeed": "Ridge line and route appear in the Live City Feed.",
+      "plannedBuild": null
+    },
+    {
+      "id": "expedition-prep",
+      "title": "What can travel without heat?",
+      "act": 3,
+      "actTitle": "The Signal Beneath the Ice",
+      "status": "implemented",
+      "trigger": "ridge-map plus energy/food budget",
+      "decisionSpace": "Send engineers, archivist, or a mixed team.",
+      "connections": "Team composition changes which clues are found and who survives a hazard.",
+      "liveCityFeed": "Convoy lights appear at city perimeter.",
+      "plannedBuild": null
+    },
+    {
+      "id": "ridge-crossing",
+      "title": "The whiteout crossing",
+      "act": 3,
+      "actTitle": "The Signal Beneath the Ice",
+      "status": "implemented",
+      "trigger": "expedition launched",
+      "decisionSpace": "Follow the safe beacon route or cut across the exposed pass.",
+      "connections": "Safe route costs time; short route risks supplies or a key specialist.",
+      "liveCityFeed": "Storm and distant beacon visual.",
+      "plannedBuild": null
+    },
+    {
+      "id": "weather-station",
+      "title": "A station still recording",
+      "act": 3,
+      "actTitle": "The Signal Beneath the Ice",
+      "status": "implemented",
+      "trigger": "ridge crossing succeeds",
+      "decisionSpace": "Recover the station drives or power the live array first.",
+      "connections": "Creates raw atmosphere data and reveals the network’s repeating protective cycle.",
+      "liveCityFeed": "A remote tower wakes in the feed.",
+      "plannedBuild": null
+    },
+    {
+      "id": "jorel-evacuation-record",
+      "title": "The name marked transferred",
+      "act": 3,
+      "actTitle": "The Signal Beneath the Ice",
+      "status": "implemented",
+      "trigger": "Jorel cargo trail + station or depot records",
+      "decisionSpace": "Verify the evacuation record before telling Ilya or tell her immediately.",
+      "connections": "Proof of survival is separate from reunion; secrecy changes Ilya’s trust.",
+      "liveCityFeed": "A personal record appears in the dossier.",
+      "plannedBuild": null
+    },
+    {
+      "id": "ridge-settlement",
+      "title": "A city that learned to wait",
+      "act": 3,
+      "actTitle": "The Signal Beneath the Ice",
+      "status": "implemented",
+      "trigger": "expedition or live transmission succeeds",
+      "decisionSpace": "Negotiate openly, trade supplies, or gather intelligence covertly.",
+      "connections": "Determines whether the northern settlement will coordinate a reset.",
+      "liveCityFeed": "Second settlement lights appear beyond the ridge.",
+      "plannedBuild": null
+    },
+    {
+      "id": "remote-mirror",
+      "title": "The mirror field",
+      "act": 3,
+      "actTitle": "The Signal Beneath the Ice",
+      "status": "implemented",
+      "trigger": "ridge settlement contact + prototype/atmosphere data",
+      "decisionSpace": "Borrow the mirror array or protect the settlement’s own survival system.",
+      "connections": "Creates a technical component for reset; coercion closes future alliance routes.",
+      "liveCityFeed": "Remote mirror beams flicker in the skyline.",
+      "plannedBuild": null
+    },
+    {
+      "id": "relay-repair",
+      "title": "The relay has a human lock",
+      "act": 3,
+      "actTitle": "The Signal Beneath the Ice",
+      "status": "planned",
+      "trigger": "ridge-map + evidence of repeated signal",
+      "decisionSpace": "Repair the relay with shared parts or bypass its safety lock.",
+      "connections": "Shared repair improves alliance; bypass gives speed but causes a later unstable pulse.",
+      "liveCityFeed": "Signal becomes stable or visibly noisy.",
+      "plannedBuild": "v1.0 campaign implementation"
+    },
+    {
+      "id": "dawnline-archive-fragment",
+      "title": "A protocol signed by nobody",
+      "act": 3,
+      "actTitle": "The Signal Beneath the Ice",
+      "status": "implemented",
+      "trigger": "weather-station OR Quill archive evidence plus signal schedule",
+      "decisionSpace": "Decode the autonomous header or pursue the human authorisation trail first.",
+      "connections": "First clear proof the system is autonomous; author trail points toward Mara’s override.",
+      "liveCityFeed": "Old DAWNLINE protocol appears in evidence.",
+      "plannedBuild": null
+    },
+    {
+      "id": "station-interrogation",
+      "title": "The last operator’s recording",
+      "act": 3,
+      "actTitle": "The Signal Beneath the Ice",
+      "status": "planned",
+      "trigger": "archive fragment + northern station recovered",
+      "decisionSpace": "Release recording, preserve it for court, or keep it under technical custody.",
+      "connections": "Changes public knowledge and Nadia/ Vale relationship; all paths retain the actual truth.",
+      "liveCityFeed": "Recorder waveform; public feed changes only if released.",
+      "plannedBuild": "v1.0 campaign implementation"
+    },
+    {
+      "id": "first-night-transcript",
+      "title": "The minutes before the sky closed",
+      "act": 3,
+      "actTitle": "The Signal Beneath the Ice",
+      "status": "planned",
+      "trigger": "Quill vault + station/relay evidence",
+      "decisionSpace": "Read all transcript or publish an annotated extract.",
+      "connections": "Establishes the solar catastrophe was real while the continued veil was a later system failure.",
+      "liveCityFeed": "Dawn Engine status panel gets original activation timestamp.",
+      "plannedBuild": "v1.0 campaign implementation"
+    },
+    {
+      "id": "proof-of-veil",
+      "title": "The veil has a schedule",
+      "act": 3,
+      "actTitle": "The Signal Beneath the Ice",
+      "status": "implemented",
+      "trigger": "weather data + signal phase + atmospheric scan (any 2 independent sources)",
+      "decisionSpace": "Request a peer review or act on provisional evidence.",
+      "connections": "Peer review costs time but broadens trust; rapid action makes the next test riskier.",
+      "liveCityFeed": "Atmospheric waves become more legible.",
+      "plannedBuild": null
+    },
+    {
+      "id": "signal-public-release",
+      "title": "The city hears the pulse",
+      "act": 3,
+      "actTitle": "The Signal Beneath the Ice",
+      "status": "planned",
+      "trigger": "public-broadcast-copy OR hearing and two independent signal clues",
+      "decisionSpace": "Broadcast the full data or release a verified summary.",
+      "connections": "Sets public knowledge, avoiding the simplistic “truth always helps” outcome: timing and verification matter.",
+      "liveCityFeed": "Public displays repeat the signal pattern.",
+      "plannedBuild": "v1.0 campaign implementation"
+    },
+    {
+      "id": "ridge-envoy",
+      "title": "A representative at the wall",
+      "act": 3,
+      "actTitle": "The Signal Beneath the Ice",
+      "status": "implemented",
+      "trigger": "ridge settlement contact + public or verified signal release",
+      "decisionSpace": "Welcome an envoy publicly or negotiate through Elias/Nadia.",
+      "connections": "Public route builds civic legitimacy; private route may be faster but less accountable.",
+      "liveCityFeed": "A second flag/light appears on the skyline.",
+      "plannedBuild": null
+    },
+    {
+      "id": "cross-settlement-compact",
+      "title": "One protocol, two cities",
+      "act": 3,
+      "actTitle": "The Signal Beneath the Ice",
+      "status": "implemented",
+      "trigger": "ridge alliance + confirmed atmospheric window + any two technical evidence items",
+      "decisionSpace": "Sign a reciprocal reset compact or keep the process under Vesper command.",
+      "connections": "Shared protocol enables best ending; Vesper-only control increases risk and makes outcomes depend more heavily on reserves.",
+      "liveCityFeed": "Twin signal beams sync across ridge.",
+      "plannedBuild": null
+    },
+    {
+      "id": "third-signal-clue",
+      "title": "The voice after the schedule",
+      "act": 3,
+      "actTitle": "The Signal Beneath the Ice",
+      "status": "implemented",
+      "trigger": "line-9 signal intact and signal phase confirmed",
+      "decisionSpace": "Answer with a proof-of-life code or listen silently for another cycle.",
+      "connections": "The reply is Jorel’s maintenance code, proving he reached the relay crew without instantly explaining DAWNLINE.",
+      "liveCityFeed": "Signal waveform gains a human-coded pattern.",
+      "plannedBuild": null
+    },
+    {
+      "id": "sun-engine",
+      "title": "The sun engine",
+      "act": 4,
+      "actTitle": "The Architecture of Night",
+      "status": "implemented",
+      "trigger": "Technology threshold; array safety debate",
+      "decisionSpace": "Overdrive for immediate warmth or calibrate a safer cycle.",
+      "connections": "Sets mirror fracture or safe-cycle evidence and Mara relationship.",
+      "liveCityFeed": "Fractured/dawn engine mood.",
+      "plannedBuild": null
+    },
+    {
+      "id": "mirror-proposal",
+      "title": "The mirror proposal",
+      "act": 4,
+      "actTitle": "The Architecture of Night",
+      "status": "implemented",
+      "trigger": "Technology threshold",
+      "decisionSpace": "Fund the prototype or shelve it.",
+      "connections": "Provides remote-light technology or preserves reserves.",
+      "liveCityFeed": "Prototype lights/extra glints in sky.",
+      "plannedBuild": null
+    },
+    {
+      "id": "mirror-fractures",
+      "title": "A sun with a broken edge",
+      "act": 1,
+      "actTitle": "The Last Warm District",
+      "status": "implemented",
+      "trigger": "sun-overdriven and mirror bank unresolved",
+      "decisionSpace": "Repair the mirror crew’s bank or isolate it.",
+      "connections": "Repairs core or preserves safety with reduced output.",
+      "liveCityFeed": "Fractured mood clears only after repair/isolation resolution.",
+      "plannedBuild": null
+    },
+    {
+      "id": "dawnline-access",
+      "title": "The facility behind the false wall",
+      "act": 4,
+      "actTitle": "The Architecture of Night",
+      "status": "implemented",
+      "trigger": "Quill archive + depot/relay evidence and technology threshold",
+      "decisionSpace": "Enter under public warrant or use Vale’s emergency authority.",
+      "connections": "Public warrant builds legitimacy; Vale entry boosts access but gives security leverage.",
+      "liveCityFeed": "Hidden facility access light opens.",
+      "plannedBuild": null
+    },
+    {
+      "id": "mara-override-confession",
+      "title": "The override with her name on it",
+      "act": 4,
+      "actTitle": "The Architecture of Night",
+      "status": "implemented",
+      "trigger": "Dawnline access + Northworks record",
+      "decisionSpace": "Let Mara testify, negotiate protected testimony, or discredit the record.",
+      "connections": "Mara can become accountable partner or withdraw; evidence remains in world state.",
+      "liveCityFeed": "Engineering scene adds archived incident markers.",
+      "plannedBuild": null
+    },
+    {
+      "id": "vale-abandonment-order",
+      "title": "The list was already written",
+      "act": 4,
+      "actTitle": "The Architecture of Night",
+      "status": "planned",
+      "trigger": "Vale contingency list discovered or security command unchecked",
+      "decisionSpace": "Publish the list and constrain Vale or accept his plan as triage doctrine.",
+      "connections": "Sets People’s Dawn / Iron Winter prerequisites and who controls Act V evacuation.",
+      "liveCityFeed": "District evacuation markers appear.",
+      "plannedBuild": "v1.0 campaign implementation"
+    },
+    {
+      "id": "jorel-reunion",
+      "title": "A voice from the far station",
+      "act": 4,
+      "actTitle": "The Architecture of Night",
+      "status": "implemented",
+      "trigger": "Jorel survival confirmed + ridge alliance + Ilya trust ≥12",
+      "decisionSpace": "Arrange a protected reunion or send a message first.",
+      "connections": "Reunion yields his manifest testimony; distance preserves safety but may strain Ilya.",
+      "liveCityFeed": "Live feed radio console shows a personal channel.",
+      "plannedBuild": null
+    },
+    {
+      "id": "quill-full-archive",
+      "title": "The pages she kept",
+      "act": 4,
+      "actTitle": "The Architecture of Night",
+      "status": "implemented",
+      "trigger": "Nadia met + First Night transcript evidence",
+      "decisionSpace": "Release full archive, annotate it with independent review, or retain sensitive pages.",
+      "connections": "Full release raises transparency and immediate unrest risk; review creates a slower shared record.",
+      "liveCityFeed": "Archive wall/municipal displays change.",
+      "plannedBuild": null
+    },
+    {
+      "id": "gantry-workshop",
+      "title": "A repair crew from both cities",
+      "act": 4,
+      "actTitle": "The Architecture of Night",
+      "status": "implemented",
+      "trigger": "copper public contract OR ridge alliance",
+      "decisionSpace": "Build the gantry with guilds or the mixed public crew.",
+      "connections": "Guild build is faster but creates contract leverage; public crew needs Ilya/engineering trust.",
+      "liveCityFeed": "Gantry scaffold appears around the artificial sun.",
+      "plannedBuild": null
+    },
+    {
+      "id": "mirror-calibration",
+      "title": "Point the mirrors at the gap",
+      "act": 4,
+      "actTitle": "The Architecture of Night",
+      "status": "implemented",
+      "trigger": "prototype mirror data + sky window + safe cycle",
+      "decisionSpace": "Use model-derived calibration or copy the ridge’s empirical method.",
+      "connections": "Both can work; only the first preserves a redundant safety margin without additional evidence.",
+      "liveCityFeed": "Narrow beam aligns with a gap in the sky.",
+      "plannedBuild": null
+    },
+    {
+      "id": "orbital-telemetry",
+      "title": "The network answers back",
+      "act": 4,
+      "actTitle": "The Architecture of Night",
+      "status": "implemented",
+      "trigger": "dawnline archive fragment + mirror calibration",
+      "decisionSpace": "Read the handshake or isolate the uplink during the next window.",
+      "connections": "Confirms autonomous lockout and identifies a human verification challenge.",
+      "liveCityFeed": "Orbital lights pulse in a matching pattern.",
+      "plannedBuild": null
+    },
+    {
+      "id": "veil-model",
+      "title": "The safety model that never ended",
+      "act": 4,
+      "actTitle": "The Architecture of Night",
+      "status": "implemented",
+      "trigger": "first-night transcript + orbital telemetry + signal schedule",
+      "decisionSpace": "Accept peer review or rely on the technical council alone.",
+      "connections": "Adds veil-is-maintained and Dawnline-autonomous truths if prerequisites met.",
+      "liveCityFeed": "Sky pattern reveals a timed corridor.",
+      "plannedBuild": null
+    },
+    {
+      "id": "grid-rebuild",
+      "title": "A grid that can survive a reset",
+      "act": 4,
+      "actTitle": "The Architecture of Night",
+      "status": "implemented",
+      "trigger": "reactor online OR greenhouse/network and enough technology",
+      "decisionSpace": "Rebuild redundant loops or conserve for the immediate pulse.",
+      "connections": "Redundancy lowers pulse risk and helps Eternal City if the pulse is deferred.",
+      "liveCityFeed": "District lights connect as a visible network.",
+      "plannedBuild": null
+    },
+    {
+      "id": "seed-network-expansion",
+      "title": "Food after the first light",
+      "act": 4,
+      "actTitle": "The Architecture of Night",
+      "status": "planned",
+      "trigger": "greenhouse network live or seed vault saved",
+      "decisionSpace": "Expand seed network now or reserve energy for the pulse.",
+      "connections": "Food resilience supports evacuation/recovery; saving energy improves immediate array headroom.",
+      "liveCityFeed": "Greenhouse nodes spread across city silhouettes.",
+      "plannedBuild": "v1.0 campaign implementation"
+    },
+    {
+      "id": "public-trial",
+      "title": "A trial without a scapegoat",
+      "act": 4,
+      "actTitle": "The Architecture of Night",
+      "status": "planned",
+      "trigger": "Mara override evidence + public hearing or full archive",
+      "decisionSpace": "Hold a transparent hearing or handle the incident privately.",
+      "connections": "Public accountability builds civic trust; private deal may preserve immediate order but empowers Vale.",
+      "liveCityFeed": "Civic plaza scene changes based on audience/control.",
+      "plannedBuild": "v1.0 campaign implementation"
+    },
+    {
+      "id": "security-oath",
+      "title": "Who guards the switch?",
+      "act": 4,
+      "actTitle": "The Architecture of Night",
+      "status": "planned",
+      "trigger": "Vale relationship or emergency authority decision",
+      "decisionSpace": "Have Vale swear to civilian oversight or appoint a technical/civic joint guard.",
+      "connections": "Vale can become a constitutionally bound ally, remain neutral, or resist.",
+      "liveCityFeed": "Searchlights shift away from residential blocks if oversight holds.",
+      "plannedBuild": "v1.0 campaign implementation"
+    },
+    {
+      "id": "northern-crew-recruited",
+      "title": "The ridge crew crosses the wall",
+      "act": 4,
+      "actTitle": "The Architecture of Night",
+      "status": "planned",
+      "trigger": "ridge compact plus a stable route",
+      "decisionSpace": "Welcome skilled operators into Vesper or keep the team at the relay.",
+      "connections": "Local crew adds resilience; remote coordination is safer politically but less robust technically.",
+      "liveCityFeed": "New repair lights appear near array.",
+      "plannedBuild": "v1.0 campaign implementation"
+    },
+    {
+      "id": "dawnline-ethics-vote",
+      "title": "A system needs a human answer",
+      "act": 4,
+      "actTitle": "The Architecture of Night",
+      "status": "planned",
+      "trigger": "veil model confirmed + public knowledge/oversight state",
+      "decisionSpace": "Accept human-in-the-loop reset protocol or preserve autonomous safeguards.",
+      "connections": "Defines final control architecture and ending availability.",
+      "liveCityFeed": "Control chamber shows either human key or locked indicator.",
+      "plannedBuild": "v1.0 campaign implementation"
+    },
+    {
+      "id": "first-test-pulse",
+      "title": "A seam in the clouds",
+      "act": 4,
+      "actTitle": "The Architecture of Night",
+      "status": "implemented",
+      "trigger": "calibration, relay repair, and sufficient energy",
+      "decisionSpace": "Run a tiny test now or wait for redundancy.",
+      "connections": "Success yields light-corridor evidence; premature testing damages core and trust.",
+      "liveCityFeed": "Brief light slit only on actual test success.",
+      "plannedBuild": null
+    },
+    {
+      "id": "test-pulse-failure",
+      "title": "The light came back wrong",
+      "act": 4,
+      "actTitle": "The Architecture of Night",
+      "status": "implemented",
+      "trigger": "first test initiated without safety margin OR bad alignment",
+      "decisionSpace": "Abort and repair or conceal the failure to keep morale.",
+      "connections": "Abort preserves lives but costs energy; concealment adds future public-trust penalty.",
+      "liveCityFeed": "Sky returns to dark; a damaged mirror indicator persists.",
+      "plannedBuild": null
+    },
+    {
+      "id": "test-pulse-success",
+      "title": "Five seconds of morning",
+      "act": 4,
+      "actTitle": "The Architecture of Night",
+      "status": "implemented",
+      "trigger": "first test with safety margin / ridge coordination",
+      "decisionSpace": "Measure the corridor or broadcast the success first.",
+      "connections": "Measurement generates dependable timing evidence; broadcast first boosts morale but crowds control window.",
+      "liveCityFeed": "A genuine short-lived daylight state appears, then naturally fades.",
+      "plannedBuild": null
+    },
+    {
+      "id": "core-facility-siege",
+      "title": "The gates below the engine",
+      "act": 4,
+      "actTitle": "The Architecture of Night",
+      "status": "planned",
+      "trigger": "Vale conflict + public-revelation conflict or technical emergency",
+      "decisionSpace": "Defend the core with civic guards, negotiate, or give security full authority.",
+      "connections": "Can consume characters, damage control hardware, or produce a joint command if trust is high.",
+      "liveCityFeed": "Core facility lockdown in feed.",
+      "plannedBuild": "v1.0 campaign implementation"
+    },
+    {
+      "id": "act4-final-vote",
+      "title": "The reset is not a switch",
+      "act": 4,
+      "actTitle": "The Architecture of Night",
+      "status": "implemented",
+      "trigger": "veil maintained truth + enough tech + test result resolved",
+      "decisionSpace": "Vote for coordinated reset, local-only preservation, or staged evacuation.",
+      "connections": "Locks Act V strategy but preserves individual last-minute decisions.",
+      "liveCityFeed": "The city feed shifts to whichever operation is actually prepared.",
+      "plannedBuild": null
+    },
+    {
+      "id": "dawn-equation",
+      "title": "The dawn equation",
+      "act": 5,
+      "actTitle": "Afterlight",
+      "status": "implemented",
+      "trigger": "Current late-campaign event: technology, scan, and minimum day gates",
+      "decisionSpace": "Attempt a pulse or stabilise the array first.",
+      "connections": "This is the current first version of the final decision; v1 campaign will replace the short-cycle ending with this full sequence.",
+      "liveCityFeed": "Pulse-in-flight, not dawn, until delayed success resolves.",
+      "plannedBuild": null
+    },
+    {
+      "id": "final-evacuation",
+      "title": "The lower ring is flooding with cold",
+      "act": 5,
+      "actTitle": "Afterlight",
+      "status": "planned",
+      "trigger": "Act IV final vote and core condition",
+      "decisionSpace": "Evacuate vulnerable districts in order or keep workers in place for the reset.",
+      "connections": "Affected districts and population determine the human cost of every ending.",
+      "liveCityFeed": "Evacuation lights/convoys alter feed.",
+      "plannedBuild": "v1.0 campaign implementation"
+    },
+    {
+      "id": "last-power-allocation",
+      "title": "One reserve, three needs",
+      "act": 5,
+      "actTitle": "Afterlight",
+      "status": "planned",
+      "trigger": "final evacuation and grid-rebuild state",
+      "decisionSpace": "Allocate power to hospitals, mirror control, or the northern relay.",
+      "connections": "The selected subsystem receives a safety margin; the others develop a corresponding risk.",
+      "liveCityFeed": "Energy channels visibly illuminate one subsystem.",
+      "plannedBuild": "v1.0 campaign implementation"
+    },
+    {
+      "id": "public-truth-broadcast",
+      "title": "The record goes live",
+      "act": 5,
+      "actTitle": "Afterlight",
+      "status": "planned",
+      "trigger": "public-trial/full archive/public knowledge state",
+      "decisionSpace": "Broadcast verified evidence now or let the operation speak first.",
+      "connections": "Public disclosure changes cooperation and unrest; withheld evidence enables authoritarian control but damages post-reset legitimacy.",
+      "liveCityFeed": "Civic displays/people in plaza update.",
+      "plannedBuild": "v1.0 campaign implementation"
+    },
+    {
+      "id": "mara-on-the-gantry",
+      "title": "The last calibration",
+      "act": 5,
+      "actTitle": "Afterlight",
+      "status": "planned",
+      "trigger": "Mara trusted or engineering record preserved",
+      "decisionSpace": "Give Mara direct authority, use a second engineer, or deny her access.",
+      "connections": "Trusted Mara lowers technical risk; excluding her costs time; coercion may prompt refusal.",
+      "liveCityFeed": "Gantry close-up state reflects crew availability.",
+      "plannedBuild": "v1.0 campaign implementation"
+    },
+    {
+      "id": "ilya-switchyard",
+      "title": "The people at the switchyard",
+      "act": 5,
+      "actTitle": "Afterlight",
+      "status": "planned",
+      "trigger": "Ilya relationship and public legitimacy states",
+      "decisionSpace": "Invite civilian observers, negotiate with the crowd, or clear the switchyard.",
+      "connections": "Strong Ilya trust creates a safe civilian corridor; repression may trigger strike/siege.",
+      "liveCityFeed": "Crowd clears, coordinates, or surges.",
+      "plannedBuild": "v1.0 campaign implementation"
+    },
+    {
+      "id": "vale-final-command",
+      "title": "The order that will be remembered",
+      "act": 5,
+      "actTitle": "Afterlight",
+      "status": "planned",
+      "trigger": "security-oath and Vale standing",
+      "decisionSpace": "Order Vale to hold the line, transfer command, or accept his emergency plan.",
+      "connections": "Defines whether security protects the operation, withdraws, or attempts a takeover.",
+      "liveCityFeed": "Searchlight/security layer updates.",
+      "plannedBuild": "v1.0 campaign implementation"
+    },
+    {
+      "id": "rook-frequency-lock",
+      "title": "Hold the signal open",
+      "act": 5,
+      "actTitle": "Afterlight",
+      "status": "planned",
+      "trigger": "Elias trust plus repaired relay",
+      "decisionSpace": "Let Elias keep the channel open or cut interference manually.",
+      "connections": "Good standing preserves timing; poor standing creates a manual-risk option.",
+      "liveCityFeed": "Aurora pulse aligns or breaks.",
+      "plannedBuild": "v1.0 campaign implementation"
+    },
+    {
+      "id": "quill-records-release",
+      "title": "Who will remember this honestly?",
+      "act": 5,
+      "actTitle": "Afterlight",
+      "status": "planned",
+      "trigger": "Nadia trust and archive disposition",
+      "decisionSpace": "Release the entire verified record or preserve sealed evidence for a later tribunal.",
+      "connections": "Determines public history, character survival/loyalty epilogues, and legitimacy ending gate.",
+      "liveCityFeed": "Public archive feed changes.",
+      "plannedBuild": "v1.0 campaign implementation"
+    },
+    {
+      "id": "ridge-pulse-window",
+      "title": "The ridge gives its answer",
+      "act": 5,
+      "actTitle": "Afterlight",
+      "status": "planned",
+      "trigger": "ridge alliance + timing evidence",
+      "decisionSpace": "Synchronise two-city pulse or attempt Vesper-only alignment.",
+      "connections": "Coordinated pulse lowers risk; solo pulse possible only if technical safeguards compensate.",
+      "liveCityFeed": "Twin artificial-sun beams align across scene.",
+      "plannedBuild": "v1.0 campaign implementation"
+    },
+    {
+      "id": "dawnline-core-entry",
+      "title": "Into the machine’s memory",
+      "act": 5,
+      "actTitle": "Afterlight",
+      "status": "planned",
+      "trigger": "DAWNLINE access + telemetry + proper command authorization",
+      "decisionSpace": "Enter with human key and evidence or bypass the lockout.",
+      "connections": "Human key creates accountable reset; bypass risks permanent lockout/last-light route.",
+      "liveCityFeed": "Core chamber and network UI change.",
+      "plannedBuild": "v1.0 campaign implementation"
+    },
+    {
+      "id": "core-safety-debate",
+      "title": "Keep the shield, open the gap",
+      "act": 5,
+      "actTitle": "Afterlight",
+      "status": "planned",
+      "trigger": "DAWNLINE core entered",
+      "decisionSpace": "Preserve emergency shield in staged mode or open a narrow controlled corridor.",
+      "connections": "A full shutdown is never offered as a safe default; the meaningful choice is the transition protocol.",
+      "liveCityFeed": "Sky begins warming only in staged/corridor sequence.",
+      "plannedBuild": "v1.0 campaign implementation"
+    },
+    {
+      "id": "network-handshake",
+      "title": "Two cities, one timing window",
+      "act": 5,
+      "actTitle": "Afterlight",
+      "status": "planned",
+      "trigger": "ridge-pulse-window plus core safety protocol",
+      "decisionSpace": "Accept northern authority on timing or centralise command in Vesper.",
+      "connections": "Joint governance creates the safest reset; unilateral command is faster but raises failure risk.",
+      "liveCityFeed": "Twin relay signals synchronise.",
+      "plannedBuild": "v1.0 campaign implementation"
+    },
+    {
+      "id": "final-control-vote",
+      "title": "Who owns the morning?",
+      "act": 5,
+      "actTitle": "Afterlight",
+      "status": "planned",
+      "trigger": "network handshake and security outcome",
+      "decisionSpace": "Choose civic compact, technical trusteeship, emergency command, or evacuation leadership.",
+      "connections": "Selects political structure of epilogues, not whether the engineering outcome automatically succeeds.",
+      "liveCityFeed": "City civic/security state becomes permanent.",
+      "plannedBuild": "v1.0 campaign implementation"
+    },
+    {
+      "id": "pulse-outcome",
+      "title": "The last pulse",
+      "act": 5,
+      "actTitle": "Afterlight",
+      "status": "planned",
+      "trigger": "Power allocation, relay lock, calibration, grid and command states",
+      "decisionSpace": "Execute staged pulse, abort into permanent artificial light, or evacuate before a failed core.",
+      "connections": "Engine calculates success/risk from prior state. No outcome is random without warning; risks are telegraphed.",
+      "liveCityFeed": "Dawn only if success conditions resolve.",
+      "plannedBuild": "v1.0 campaign implementation"
+    },
+    {
+      "id": "end-state-review",
+      "title": "The cost of the future",
+      "act": 5,
+      "actTitle": "Afterlight",
+      "status": "planned",
+      "trigger": "Any ending condition",
+      "decisionSpace": "No new life-or-death choice; present the campaign ledger.",
+      "connections": "Summarises districts saved/lost, key relationships, evidence published, and the decisions that made the ending possible.",
+      "liveCityFeed": "Final Live City Feed freeze-frame.",
+      "plannedBuild": "v1.0 campaign implementation"
+    },
+    {
+      "id": "ending-first-morning",
+      "title": "ENDING — The First Morning",
+      "act": 5,
+      "actTitle": "Afterlight",
+      "status": "implemented ending",
+      "trigger": "Staged pulse succeeds; sufficient technology, power, evidence, coordination, and live grid",
+      "decisionSpace": "Natural light returns through a stable corridor; DAWNLINE moves to supervised recovery.",
+      "connections": "Best scientific outcome; epilogue changes with public legitimacy and character testimony.",
+      "liveCityFeed": "Golden natural dawn; skyline stays transformed.",
+      "plannedBuild": null
+    },
+    {
+      "id": "ending-eternal-city",
+      "title": "ENDING — The Eternal City",
+      "act": 5,
+      "actTitle": "Afterlight",
+      "status": "implemented ending",
+      "trigger": "Reset deliberately deferred/aborted; stable engine + viable food + no catastrophic collapse",
+      "decisionSpace": "Vesper survives using improved artificial light and a repaired civic/infrastructure system.",
+      "connections": "A defensible, bittersweet survival ending; not a “bad” ending if chosen knowingly.",
+      "liveCityFeed": "Stable warm artificial sun, no natural sunrise.",
+      "plannedBuild": null
+    },
+    {
+      "id": "ending-peoples-dawn",
+      "title": "ENDING — The People’s Dawn",
+      "act": 5,
+      "actTitle": "Afterlight",
+      "status": "implemented ending",
+      "trigger": "Recovery/reset succeeds with high civic legitimacy, accountable command, and public evidence",
+      "decisionSpace": "The transition belongs to a civic compact rather than one leader or machine.",
+      "connections": "Best political outcome; scientific outcome may be partial but public ownership is durable.",
+      "liveCityFeed": "Sunrise plus busy, lit public square.",
+      "plannedBuild": null
+    },
+    {
+      "id": "ending-iron-winter",
+      "title": "ENDING — The Iron Winter",
+      "act": 5,
+      "actTitle": "Afterlight",
+      "status": "implemented ending",
+      "trigger": "Vesper survives, but Vale/emergency command dominates and truth stays restricted",
+      "decisionSpace": "The city remains alive and orderly under permanent emergency authority.",
+      "connections": "Control ending with high survival but low freedom; character epilogues reflect coercion.",
+      "liveCityFeed": "Searchlights and controlled districts beneath artificial dawn.",
+      "plannedBuild": null
+    },
+    {
+      "id": "ending-beyond-ridge",
+      "title": "ENDING — Beyond the Ridge",
+      "act": 5,
+      "actTitle": "Afterlight",
+      "status": "implemented ending",
+      "trigger": "Reset not viable, but route, supplies, settlement agreement, and evacuation plan are secured",
+      "decisionSpace": "Vesper evacuates a viable population toward the northern settlement.",
+      "connections": "Hopeful migration ending; the fate of the old city and those left behind is stated honestly.",
+      "liveCityFeed": "Convoy lights cross the frozen ridge.",
+      "plannedBuild": null
+    },
+    {
+      "id": "ending-last-light",
+      "title": "ENDING — The Last Light",
+      "act": 5,
+      "actTitle": "Afterlight",
+      "status": "implemented ending",
+      "trigger": "Survival threshold breached or the final operation fails without an alternative plan",
+      "decisionSpace": "The engine fails and the city cannot sustain a transition.",
+      "connections": "Tragic ending summarises which earlier choices narrowed the options; not an arbitrary random death.",
+      "liveCityFeed": "City scene loses light according to the systems that failed.",
+      "plannedBuild": null
+    },
+    {
+      "id": "ridge-whiteout",
+      "title": "The storm erases the road",
+      "act": 3,
+      "actTitle": "The Signal Beneath the Ice",
+      "status": "implemented",
+      "trigger": "The ridge route is exposed or reserve levels indicate a serious weather risk.",
+      "decisionSpace": "Burn an emergency beacon, press downhill, or shelter and wait.",
+      "connections": "Consumes or preserves supplies; changes whether the expedition reaches the station safely.",
+      "liveCityFeed": "The city feed shows an unstable beacon trace and the field team crossing a whiteout.",
+      "plannedBuild": null
+    },
+    {
+      "id": "act-three-outlook",
+      "title": "The outer post is still calling",
+      "act": 3,
+      "actTitle": "The Signal Beneath the Ice",
+      "status": "implemented",
+      "trigger": "The required Act III main route has resolved; optional clues are retained when earned.",
+      "decisionSpace": "Prioritise a personal rescue, a shared safety compact, or tracing the autonomous command chain.",
+      "connections": "Sets the priority that opens Act IV and preserves evidence, settlement ties, and Jorel conditions.",
+      "liveCityFeed": "The view shifts from the ridge contact to the outer relay coordinates.",
+      "plannedBuild": null
+    },
+    {
+      "id": "outer-relay-briefing",
+      "title": "The relay has a human lock",
+      "act": 4,
+      "actTitle": "The Architecture of Night",
+      "status": "implemented",
+      "trigger": "Act III climax is complete.",
+      "decisionSpace": "Choose whether rescue, the inter-city protocol, or the command trace leads Act IV.",
+      "connections": "Opens Act IV and creates the first operations-board commitment.",
+      "liveCityFeed": "The relay map overlays the city scene; a human lock is now the operational obstacle.",
+      "plannedBuild": null
+    },
+    {
+      "id": "act-four-council",
+      "title": "Two cities, one dangerous switch",
+      "act": 4,
+      "actTitle": "The Architecture of Night",
+      "status": "implemented",
+      "trigger": "The Act IV operations briefing is resolved.",
+      "decisionSpace": "Public mandate, temporary technical authority, or a binding two-city compact.",
+      "connections": "Sets political legitimacy, working relationships, shared control evidence, and emergency supplies.",
+      "liveCityFeed": "The scene moves to Vesper’s joint civic chamber and the Dawnline control sublevel.",
+      "plannedBuild": null
+    },
+    {
+      "id": "relay-lock-authenticated",
+      "title": "The lock recognises a living operator",
+      "act": 4,
+      "actTitle": "The Architecture of Night",
+      "status": "implemented",
+      "trigger": "Jorel’s maintenance code is present in the persistent evidence record.",
+      "decisionSpace": "Authenticate jointly with a Hearth-9 witness or misuse the code as root authority.",
+      "connections": "Establishes a human interlock or raises the DAWNLINE security alert.",
+      "liveCityFeed": "The facility changes to the human-lock state; an unauthorised attempt can trigger a breach warning.",
+      "plannedBuild": null
+    },
+    {
+      "id": "relay-lock-manual",
+      "title": "The human lock cannot be spoofed",
+      "act": 4,
+      "actTitle": "The Architecture of Night",
+      "status": "implemented",
+      "trigger": "Jorel’s maintenance code is absent or Line 9 was sealed.",
+      "decisionSpace": "Request Hearth-9’s witness or force a mechanical bypass.",
+      "connections": "Can create a witnessed lock procedure or leave the relay in an unstable condition.",
+      "liveCityFeed": "The lock remains physically visible; a forced bypass creates a persistent hazard.",
+      "plannedBuild": null
+    },
+    {
+      "id": "jorel-search-plan",
+      "title": "The person behind the missing record",
+      "act": 4,
+      "actTitle": "The Architecture of Night",
+      "status": "implemented",
+      "trigger": "No confirmed current Jorel signal is available after the manual lock procedure.",
+      "decisionSpace": "Authorise a search, ask Hearth-9 to authenticate a maintenance window, or restrict the operation.",
+      "connections": "Keeps Jorel’s fate open while advancing the shared safety work.",
+      "liveCityFeed": "The live signal caption changes to an unconfirmed location and an open rescue request.",
+      "plannedBuild": null
+    },
+    {
+      "id": "second-test-window",
+      "title": "The second test window",
+      "act": 4,
+      "actTitle": "The Architecture of Night",
+      "status": "implemented",
+      "trigger": "The first pulse was deferred and the reserve/rebuild scene has resolved.",
+      "decisionSpace": "Run a second controlled test or abort the pulse and preserve the local system.",
+      "connections": "Re-evaluates the actual safety state, determining success or safe failure before the final vote.",
+      "liveCityFeed": "The artificial sun enters a second, timed calibration window.",
+      "plannedBuild": null
+    },
+    {
+      "id": "act-five-briefing",
+      "title": "The last window",
+      "act": 5,
+      "actTitle": "Afterlight",
+      "status": "implemented",
+      "trigger": "The Act IV final vote records the chosen strategy.",
+      "decisionSpace": "Prepare the coordinated reset, reinforce the local artificial dawn, or open the protected evacuation route.",
+      "connections": "This is the implemented Act V opening only; the remaining final campaign and endings are still planned.",
+      "liveCityFeed": "The final operations room shows the next autonomous closure window approaching.",
+      "plannedBuild": null
+    },
+    {
+      "id": "act-five-commitments",
+      "title": "Who stands at the final console?",
+      "act": 5,
+      "actTitle": "Afterlight",
+      "status": "implemented",
+      "trigger": "Act V briefing has resolved and the final closure window is approaching.",
+      "decisionSpace": "Commit to an engineering coalition, civilian witnesses, unified security command, or evacuation convoy.",
+      "connections": "The chosen coalition gates the endings; character relationships record who was trusted or excluded.",
+      "liveCityFeed": "The city feed shows crews assembling, public witnesses gathering, security cordons, or evacuation transport.",
+      "plannedBuild": null
+    },
+    {
+      "id": "act-five-jorel-dispatch",
+      "title": "A voice at the outer relay",
+      "act": 5,
+      "actTitle": "Afterlight",
+      "status": "implemented",
+      "trigger": "The final coalition is chosen; current signal evidence governs rescue availability.",
+      "decisionSpace": "Extract Jorel using an authenticated live channel, request a search, or keep the relay staffed.",
+      "connections": "Adds a personal consequence to the finale without claiming a rescue that the evidence cannot support.",
+      "liveCityFeed": "The outer-relay signal, rescue roster and convoy status alter the feed caption.",
+      "plannedBuild": null
+    },
+    {
+      "id": "act-five-final-operation",
+      "title": "Afterlight",
+      "act": 5,
+      "actTitle": "Afterlight",
+      "status": "implemented",
+      "trigger": "Final coalition and Jorel dispatch are recorded.",
+      "decisionSpace": "Choose one of six distinct campaign endings, with safe reset gated on the tested pulse, compact, human interlock, engineering coalition and shared-control evidence.",
+      "connections": "Resolves the campaign immediately; ending title, result text, and city scene follow the recorded outcome.",
+      "liveCityFeed": "Natural dawn, local artificial light, civilian recovery, authoritarian order, northern evacuation, or catastrophic shutdown.",
+      "plannedBuild": null
+    }
+  ],
+  "edges": [
+    {
+      "from": "failing-grid",
+      "to": "blackout-aftermath",
+      "condition": "blackout-policy and lights not restored"
+    },
+    {
+      "from": "failing-grid",
+      "to": "mara-intake",
+      "condition": "opening crisis; character introduction"
+    },
+    {
+      "from": "ration-ledger",
+      "to": "storehouse-manifest",
+      "condition": "any ledger outcome"
+    },
+    {
+      "from": "ration-ledger",
+      "to": "public-hearing",
+      "condition": "published ledger, independent audit, or assembly"
+    },
+    {
+      "from": "heat-theft",
+      "to": "ilya-clinic-visit",
+      "condition": "shelter outcome creates human cost"
+    },
+    {
+      "from": "blackout-aftermath",
+      "to": "clinic-blackout-case",
+      "condition": "blackout impact recorded"
+    },
+    {
+      "from": "blackout-aftermath",
+      "to": "frost-witness",
+      "condition": "blackout extended or public order falls"
+    },
+    {
+      "from": "power-broker",
+      "to": "copper-guild-dispute",
+      "condition": "compact/public contract sets parts ownership"
+    },
+    {
+      "from": "storehouse-manifest",
+      "to": "ration-audit",
+      "condition": "shipment discrepancy is audited"
+    },
+    {
+      "from": "storehouse-manifest",
+      "to": "jorel-trail",
+      "condition": "cargo tag matches Jorel record"
+    },
+    {
+      "from": "maintenance-shift-log",
+      "to": "mara-black-box",
+      "condition": "original power log preserved"
+    },
+    {
+      "from": "ration-audit",
+      "to": "night-watch-climax",
+      "condition": "independent anomaly evidence"
+    },
+    {
+      "from": "mara-black-box",
+      "to": "night-watch-climax",
+      "condition": "maintenance routing anomaly evidence"
+    },
+    {
+      "from": "night-watch-climax",
+      "to": "signal-below",
+      "condition": "relay id points to Line 9"
+    },
+    {
+      "from": "signal-below",
+      "to": "signal-echo",
+      "condition": "signal-investigated and transmitter not cut"
+    },
+    {
+      "from": "signal-below",
+      "to": "rook-confession",
+      "condition": "Elias met and pulse fragment preserved"
+    },
+    {
+      "from": "outside-voice",
+      "to": "northern-visitor-interview",
+      "condition": "traveller admitted/questioned"
+    },
+    {
+      "from": "northern-visitor-interview",
+      "to": "ridge-map",
+      "condition": "verified route or decoded schedule"
+    },
+    {
+      "from": "ridge-map",
+      "to": "expedition-prep",
+      "condition": "route and budget selected"
+    },
+    {
+      "from": "expedition-prep",
+      "to": "ridge-crossing",
+      "condition": "expedition launched"
+    },
+    {
+      "from": "ridge-crossing",
+      "to": "weather-station",
+      "condition": "team reaches station"
+    },
+    {
+      "from": "jorel-trail",
+      "to": "jorel-evacuation-record",
+      "condition": "cargo trail intersects station/depot record"
+    },
+    {
+      "from": "weather-station",
+      "to": "jorel-evacuation-record",
+      "condition": "station record independently verifies transfer"
+    },
+    {
+      "from": "signal-echo",
+      "to": "proof-of-veil",
+      "condition": "signal period clue"
+    },
+    {
+      "from": "glass-sky",
+      "to": "proof-of-veil",
+      "condition": "atmospheric window clue"
+    },
+    {
+      "from": "proof-of-veil",
+      "to": "dawnline-archive-fragment",
+      "condition": "two independent clues support protocol search"
+    },
+    {
+      "from": "quill-vault-access",
+      "to": "first-night-transcript",
+      "condition": "archive opened"
+    },
+    {
+      "from": "dawnline-archive-fragment",
+      "to": "orbital-telemetry",
+      "condition": "autonomous header leads to uplink"
+    },
+    {
+      "from": "orbital-telemetry",
+      "to": "veil-model",
+      "condition": "telemetry confirms autonomous lockout"
+    },
+    {
+      "from": "ration-audit",
+      "to": "dawnline-access",
+      "condition": "depot trail links to unlisted facility"
+    },
+    {
+      "from": "dawnline-archive-fragment",
+      "to": "dawnline-access",
+      "condition": "DAWNLINE archive access becomes actionable"
+    },
+    {
+      "from": "dawnline-access",
+      "to": "mara-override-confession",
+      "condition": "Northworks record found"
+    },
+    {
+      "from": "vale-contingency-list",
+      "to": "security-oath",
+      "condition": "command structure must be settled"
+    },
+    {
+      "from": "mirror-proposal",
+      "to": "mirror-calibration",
+      "condition": "prototype mirror data was collected"
+    },
+    {
+      "from": "glass-sky",
+      "to": "mirror-calibration",
+      "condition": "atmospheric alignment window"
+    },
+    {
+      "from": "maintenance-shift-log",
+      "to": "mirror-calibration",
+      "condition": "safe cycle calculation"
+    },
+    {
+      "from": "mirror-calibration",
+      "to": "first-test-pulse",
+      "condition": "alignment ready"
+    },
+    {
+      "from": "relay-repair",
+      "to": "first-test-pulse",
+      "condition": "timing channel ready"
+    },
+    {
+      "from": "first-test-pulse",
+      "to": "test-pulse-success",
+      "condition": "safe margin or coordinated ridge timing"
+    },
+    {
+      "from": "first-test-pulse",
+      "to": "test-pulse-failure",
+      "condition": "insufficient margin or bad alignment"
+    },
+    {
+      "from": "test-pulse-success",
+      "to": "act4-final-vote",
+      "condition": "safe test produces a real but temporary corridor"
+    },
+    {
+      "from": "test-pulse-failure",
+      "to": "act4-final-vote",
+      "condition": "failed test forces fallback planning"
+    },
+    {
+      "from": "act4-final-vote",
+      "to": "final-evacuation",
+      "condition": "final strategy selected"
+    },
+    {
+      "from": "final-evacuation",
+      "to": "last-power-allocation",
+      "condition": "vulnerable districts identified"
+    },
+    {
+      "from": "grid-rebuild",
+      "to": "last-power-allocation",
+      "condition": "reserve and redundancy known"
+    },
+    {
+      "from": "last-power-allocation",
+      "to": "ridge-pulse-window",
+      "condition": "power budget chosen"
+    },
+    {
+      "from": "dawnline-access",
+      "to": "dawnline-core-entry",
+      "condition": "facility access secured"
+    },
+    {
+      "from": "veil-model",
+      "to": "core-safety-debate",
+      "condition": "autonomous safety rules understood"
+    },
+    {
+      "from": "dawnline-core-entry",
+      "to": "core-safety-debate",
+      "condition": "core system reached"
+    },
+    {
+      "from": "ridge-pulse-window",
+      "to": "network-handshake",
+      "condition": "window timing available"
+    },
+    {
+      "from": "core-safety-debate",
+      "to": "network-handshake",
+      "condition": "staged protocol selected"
+    },
+    {
+      "from": "network-handshake",
+      "to": "final-control-vote",
+      "condition": "technical control method determined"
+    },
+    {
+      "from": "security-oath",
+      "to": "final-control-vote",
+      "condition": "security chain of command determined"
+    },
+    {
+      "from": "final-control-vote",
+      "to": "pulse-outcome",
+      "condition": "political authorization recorded"
+    },
+    {
+      "from": "last-power-allocation",
+      "to": "pulse-outcome",
+      "condition": "resources allocated"
+    },
+    {
+      "from": "pulse-outcome",
+      "to": "ending-first-morning",
+      "condition": "successful staged coordinated reset"
+    },
+    {
+      "from": "pulse-outcome",
+      "to": "ending-eternal-city",
+      "condition": "reset deferred; city stable"
+    },
+    {
+      "from": "pulse-outcome",
+      "to": "ending-peoples-dawn",
+      "condition": "recovery with strong civic legitimacy"
+    },
+    {
+      "from": "pulse-outcome",
+      "to": "ending-iron-winter",
+      "condition": "survival under permanent emergency power"
+    },
+    {
+      "from": "pulse-outcome",
+      "to": "ending-beyond-ridge",
+      "condition": "viable route and supplies; relocation selected"
+    },
+    {
+      "from": "pulse-outcome",
+      "to": "ending-last-light",
+      "condition": "survival threshold breached without fallback"
+    },
+    {
+      "from": "ridge-crossing",
+      "to": "ridge-whiteout",
+      "condition": "The route is exposed, a beacon kit is carried, or reserves are low"
+    },
+    {
+      "from": "ridge-whiteout",
+      "to": "weather-station",
+      "condition": "The crew reaches shelter or follows the beacon through the storm"
+    },
+    {
+      "from": "cross-settlement-compact",
+      "to": "act-three-outlook",
+      "condition": "The settlement contact route resolves; a compact may be signed or deferred"
+    },
+    {
+      "from": "proof-of-veil",
+      "to": "act-three-outlook",
+      "condition": "Independent evidence has been gathered; optional proof may be incomplete"
+    },
+    {
+      "from": "act-three-outlook",
+      "to": "outer-relay-briefing",
+      "condition": "Act III priority choice opens Act IV"
+    },
+    {
+      "from": "outer-relay-briefing",
+      "to": "act-four-council",
+      "condition": "Operations briefing resolved"
+    },
+    {
+      "from": "act-four-council",
+      "to": "dawnline-access",
+      "condition": "The governance mandate selects how the facility is entered"
+    },
+    {
+      "from": "dawnline-access",
+      "to": "mara-override-confession",
+      "condition": "Facility records identify Mara’s old override"
+    },
+    {
+      "from": "mara-override-confession",
+      "to": "quill-full-archive",
+      "condition": "Mara’s record is checked against the First Night archive"
+    },
+    {
+      "from": "quill-full-archive",
+      "to": "relay-lock-authenticated",
+      "condition": "Jorel’s maintenance code is present"
+    },
+    {
+      "from": "quill-full-archive",
+      "to": "relay-lock-manual",
+      "condition": "The maintenance code is unavailable or Line 9 was sealed"
+    },
+    {
+      "from": "relay-lock-authenticated",
+      "to": "jorel-reunion",
+      "condition": "A current Jorel signal or maintenance channel exists"
+    },
+    {
+      "from": "relay-lock-manual",
+      "to": "jorel-search-plan",
+      "condition": "The current signal was not confirmed"
+    },
+    {
+      "from": "jorel-reunion",
+      "to": "gantry-workshop",
+      "condition": "Contact path resolved; joint engineering can begin"
+    },
+    {
+      "from": "jorel-search-plan",
+      "to": "gantry-workshop",
+      "condition": "Search plan recorded; joint engineering can begin"
+    },
+    {
+      "from": "gantry-workshop",
+      "to": "orbital-telemetry",
+      "condition": "The team chooses a repair build, contractor, or deferred work"
+    },
+    {
+      "from": "orbital-telemetry",
+      "to": "veil-model",
+      "condition": "A DAWNLINE response is isolated, decoded, or published"
+    },
+    {
+      "from": "veil-model",
+      "to": "mirror-calibration",
+      "condition": "At least a provisional safety model exists"
+    },
+    {
+      "from": "mirror-calibration",
+      "to": "first-test-pulse",
+      "condition": "Calibration result selects a prepared or approximate test"
+    },
+    {
+      "from": "first-test-pulse",
+      "to": "grid-rebuild",
+      "condition": "The first test is deferred rather than immediately attempted"
+    },
+    {
+      "from": "grid-rebuild",
+      "to": "second-test-window",
+      "condition": "Reserve/rebuild decision resolves"
+    },
+    {
+      "from": "first-test-pulse",
+      "to": "test-pulse-success",
+      "condition": "An immediate pulse is attempted with all safety predicates met"
+    },
+    {
+      "from": "first-test-pulse",
+      "to": "test-pulse-failure",
+      "condition": "An immediate pulse is attempted without a sufficient safety margin"
+    },
+    {
+      "from": "second-test-window",
+      "to": "test-pulse-success",
+      "condition": "The second window meets the safety predicates"
+    },
+    {
+      "from": "second-test-window",
+      "to": "test-pulse-failure",
+      "condition": "The second window does not meet the safety predicates"
+    },
+    {
+      "from": "test-pulse-success",
+      "to": "act4-final-vote",
+      "condition": "Measured light corridor is recorded"
+    },
+    {
+      "from": "test-pulse-failure",
+      "to": "act4-final-vote",
+      "condition": "Failure telemetry and fallback plan are recorded"
+    },
+    {
+      "from": "act4-final-vote",
+      "to": "act-five-briefing",
+      "condition": "The final Act IV strategy vote is recorded"
+    },
+    {
+      "from": "act-five-briefing",
+      "to": "act-five-commitments",
+      "condition": "The opening plan leads to a final coalition choice"
+    },
+    {
+      "from": "act-five-commitments",
+      "to": "act-five-jorel-dispatch",
+      "condition": "The coalition decision sets the terms for the final human stakes"
+    },
+    {
+      "from": "act-five-jorel-dispatch",
+      "to": "act-five-final-operation",
+      "condition": "The personal rescue decision precedes the irreversible finale"
+    },
+    {
+      "from": "act-five-final-operation",
+      "to": "ending-first-morning",
+      "condition": "All scientific, human-interlock, settlement and coalition safety gates pass"
+    },
+    {
+      "from": "act-five-final-operation",
+      "to": "ending-eternal-city",
+      "condition": "The player preserves local artificial light instead of issuing the planetary reset"
+    },
+    {
+      "from": "act-five-final-operation",
+      "to": "ending-peoples-dawn",
+      "condition": "A civilian recovery coalition is committed"
+    },
+    {
+      "from": "act-five-final-operation",
+      "to": "ending-iron-winter",
+      "condition": "A unified security command is committed"
+    },
+    {
+      "from": "act-five-final-operation",
+      "to": "ending-beyond-ridge",
+      "condition": "An evacuation convoy is committed"
+    },
+    {
+      "from": "act-five-final-operation",
+      "to": "ending-last-light",
+      "condition": "The player forces an unverified hard reset"
+    }
+  ]
+}

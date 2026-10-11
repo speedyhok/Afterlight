@@ -1,0 +1,453 @@
+[
+  {
+    "id": "act-five-commitments",
+    "title": "Who stands at the final console?",
+    "location": "VESPER · FINAL OPERATIONS ROOM",
+    "category": "ACT V / CHARACTER COMMITMENTS",
+    "description": "The strategy is chosen, but a vote is not a team. The last operation needs people willing to own its risks. Mara wants a repair crew who can abort without permission; Ilya wants civilian witnesses; Vale wants a single chain of command; the transport guild asks whether evacuation is a real plan or a bargaining tactic. You can build one coalition now. The others will remember being left outside the room.",
+    "once": true,
+    "choices": [
+      {
+        "id": "commit-engineering-coalition",
+        "label": "Trust the engineers and independent operators",
+        "detail": "Give Mara and Elias control of calibration, with Nadia recording each step.",
+        "deltas": {
+          "energy": -5,
+          "technology": 10,
+          "order": -5
+        },
+        "note": "Mara accepts only if the abort conditions remain public. Elias places the verified timing table beside the controls.",
+        "setFlags": [
+          "final-commitment-engineering"
+        ],
+        "storyEffects": {
+          "relationships": {
+            "mara": 8,
+            "elias": 8,
+            "nadia": 2,
+            "vale": -2
+          },
+          "meetCharacters": [
+            "mara",
+            "elias"
+          ],
+          "discoverEvidence": [
+            "final-operation-roster"
+          ]
+        }
+      },
+      {
+        "id": "commit-civic-coalition",
+        "label": "Put civilians and witnesses beside the controls",
+        "detail": "Ilya and Nadia will make the operation answerable to the people who bear its cost.",
+        "deltas": {
+          "energy": -5,
+          "order": 10,
+          "technology": -5
+        },
+        "note": "Ilya accepts a seat only if emergency powers expire when the operation ends. Nadia insists that the raw log be copied to both cities.",
+        "setFlags": [
+          "final-commitment-civic",
+          "final-public-mandate"
+        ],
+        "storyEffects": {
+          "relationships": {
+            "ilya": 8,
+            "nadia": 8,
+            "mara": 2,
+            "vale": -6
+          },
+          "meetCharacters": [
+            "ilya",
+            "nadia"
+          ],
+          "discoverEvidence": [
+            "final-operation-roster",
+            "public-operation-mandate"
+          ]
+        }
+      },
+      {
+        "id": "commit-security-chain",
+        "label": "Give Vale the unified command",
+        "detail": "A single chain of command may act fast, but dissent will be treated as an operational risk.",
+        "deltas": {
+          "energy": 10,
+          "order": -10,
+          "technology": -5
+        },
+        "note": "Vale accepts responsibility for the whole operation. He orders every corridor guarded and every alternative plan placed under his seal.",
+        "setFlags": [
+          "final-commitment-security",
+          "final-security-command"
+        ],
+        "storyEffects": {
+          "relationships": {
+            "vale": 10,
+            "ilya": -8,
+            "nadia": -4
+          },
+          "meetCharacters": [
+            "vale"
+          ],
+          "discoverEvidence": [
+            "final-operation-roster"
+          ]
+        }
+      },
+      {
+        "id": "commit-evacuation-convoy",
+        "label": "Make the evacuation convoy a real commitment",
+        "detail": "Reserve transport, heat cells and space at Hearth-9 before the closure window.",
+        "deltas": {
+          "food": -5,
+          "population": 5,
+          "order": 5
+        },
+        "note": "The transport guild receives names rather than estimates. The convoy can move people if Vesper cannot safely hold the line.",
+        "setFlags": [
+          "final-commitment-evacuation",
+          "final-convoy-prepared"
+        ],
+        "storyEffects": {
+          "relationships": {
+            "ilya": 5,
+            "jorel": 4,
+            "nadia": 3,
+            "vale": -2
+          },
+          "meetCharacters": [
+            "ilya"
+          ],
+          "discoverEvidence": [
+            "final-evacuation-manifest"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "act-five-jorel-dispatch",
+    "title": "A voice at the outer relay",
+    "location": "HEARTH-9 ↔ K-17 · NARROWBAND CHANNEL",
+    "category": "ACT V / PERSONAL STAKES",
+    "description": "The final closure window is narrowing. A burst of maintenance telemetry carries Jorel’s old checksum, but a checksum alone cannot tell you whether he is at the other end of the line. If the current signal was authenticated, an extraction can be attempted now. Otherwise, Hearth-9 can send a query to his last verified work post—or you can keep every watt on the main operation and accept that the search may end in silence.",
+    "once": true,
+    "choices": [
+      {
+        "id": "final-jorel-extraction",
+        "label": "Use the live code to bring Jorel through the pressure lock",
+        "detail": "Divert the outer team for one last extraction while the relay is still answering.",
+        "deltas": {
+          "energy": -10,
+          "food": -10,
+          "order": 10
+        },
+        "note": "The code returns with the correct human challenge. Hearth-9 opens the pressure lock and receives Jorel and the relay technician. The rescue costs reserves, but the city no longer has to infer his fate.",
+        "requiresTruths": [
+          "jorel-current-signal-confirmed"
+        ],
+        "minStats": {
+          "energy": 15,
+          "food": 15
+        },
+        "setFlags": [
+          "jorel-rescued",
+          "jorel-final-extraction"
+        ],
+        "storyEffects": {
+          "relationships": {
+            "jorel": 15,
+            "ilya": 12,
+            "elias": 3
+          },
+          "discoverEvidence": [
+            "jorel-return-record"
+          ],
+          "revealTruths": [
+            "jorel-rescued"
+          ]
+        }
+      },
+      {
+        "id": "final-jorel-request",
+        "label": "Ask Hearth-9 to dispatch a team to the last verified post",
+        "detail": "Use the roster and transfer record; do not claim a rescue that has not happened.",
+        "deltas": {
+          "energy": -5,
+          "technology": 5,
+          "order": 5
+        },
+        "note": "Hearth-9 accepts the request and starts a search against the last verified coordinates. Jorel’s fate remains unresolved, but his name is now on an acknowledged rescue manifest.",
+        "requiresTruths": [
+          "jorel-survived"
+        ],
+        "setFlags": [
+          "jorel-rescue-requested",
+          "jorel-final-extraction-pending"
+        ],
+        "storyEffects": {
+          "relationships": {
+            "ilya": 5,
+            "jorel": 3,
+            "nadia": 2
+          },
+          "discoverEvidence": [
+            "jorel-return-record"
+          ]
+        }
+      },
+      {
+        "id": "final-jorel-hold",
+        "label": "Keep the relay team on station until the operation closes",
+        "detail": "Protect the only live handoff channel; defer the personal rescue.",
+        "deltas": {
+          "energy": 5,
+          "order": -5
+        },
+        "note": "The relay remains staffed through the window. Ilya does not forgive the delay, but she sees the decision recorded rather than hidden.",
+        "setFlags": [
+          "jorel-rescue-deferred"
+        ],
+        "storyEffects": {
+          "relationships": {
+            "ilya": -4,
+            "jorel": -2
+          },
+          "discoverEvidence": [
+            "jorel-return-record"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "act-five-final-operation",
+    "title": "Afterlight",
+    "location": "DAWNLINE · FINAL CONTROL WINDOW",
+    "category": "ACT V / FINAL DECISION",
+    "description": "DAWNLINE begins its closure sequence. The five-second corridor proved that natural light can enter the atmosphere, but it did not prove that the planetary shield can be reset safely. At the console are the evidence you preserved, the coalition you chose, the fallback systems you built, and the cities that agreed—or refused—to share control. There is no option without a cost. What future will Vesper commit itself to?",
+    "once": true,
+    "choices": [
+      {
+        "id": "ending-first-morning",
+        "label": "Attempt the coordinated human-supervised reset",
+        "detail": "Open the tested corridor, preserve the protective shield, and transfer control only on reciprocal confirmation.",
+        "deltas": {
+          "energy": -10,
+          "food": -5,
+          "technology": 10,
+          "order": 5
+        },
+        "note": "The two cities confirm the timing receipt. A human witness holds the interlock while DAWNLINE releases the maintained veil cycle in stages. Natural light reaches Vesper—not as a miracle, but as a process that can be measured, stopped and continued.",
+        "requiresFlags": [
+          "test-pulse-succeeded",
+          "settlement-compact-signed",
+          "human-interlock-understood",
+          "final-commitment-engineering"
+        ],
+        "requiresTruths": [
+          "safe-reset-requires-coordination",
+          "both-cities-control-protocol",
+          "safe-reset-tested-once",
+          "human-override-required"
+        ],
+        "minStats": {
+          "technology": 35,
+          "energy": 15
+        },
+        "setFlags": [
+          "act-five-complete",
+          "ending-first-morning",
+          "dawn-reached"
+        ],
+        "storyEffects": {
+          "relationships": {
+            "mara": 8,
+            "elias": 8,
+            "ilya": 5,
+            "nadia": 6,
+            "jorel": 4
+          },
+          "discoverEvidence": [
+            "final-reset-record"
+          ],
+          "revealTruths": [
+            "dawnline-human-handoff-complete"
+          ],
+          "districts": {
+            "west": "recovering",
+            "lower": "recovering",
+            "core": "recovering"
+          }
+        }
+      },
+      {
+        "id": "ending-eternal-city",
+        "label": "Preserve the artificial dawn and refuse a planetary reset",
+        "detail": "Keep Vesper’s proven local system, publish the limits, and continue a slower reconstruction.",
+        "deltas": {
+          "energy": 10,
+          "food": 5,
+          "order": 10,
+          "technology": 5
+        },
+        "note": "Vesper declines the global command. Engineers isolate the local array from the autonomous network and begin a long programme of repair, food production and controlled research. The sky remains dark, but the city is no longer waiting for a single dangerous switch.",
+        "setFlags": [
+          "act-five-complete",
+          "ending-eternal-city",
+          "local-dawn-preserved"
+        ],
+        "storyEffects": {
+          "relationships": {
+            "mara": 5,
+            "vale": 3,
+            "ilya": 2
+          },
+          "discoverEvidence": [
+            "local-dawn-charter"
+          ],
+          "districts": {
+            "west": "recovering",
+            "core": "stable"
+          }
+        }
+      },
+      {
+        "id": "ending-peoples-dawn",
+        "label": "Transfer control to a civilian recovery assembly",
+        "detail": "Make the network evidence public, end emergency rule and let both cities share the next decision.",
+        "deltas": {
+          "energy": -5,
+          "food": -5,
+          "order": 15,
+          "technology": -5
+        },
+        "note": "The public archive, safety record and command logs are opened to both cities. Emergency authority expires under a witnessed vote. The reset is not completed tonight; the achievement is that no one can make the next planetary decision alone.",
+        "requiresFlags": [
+          "final-commitment-civic"
+        ],
+        "setFlags": [
+          "act-five-complete",
+          "ending-peoples-dawn",
+          "civilian-recovery-assembly"
+        ],
+        "storyEffects": {
+          "relationships": {
+            "ilya": 12,
+            "nadia": 10,
+            "mara": 2,
+            "vale": -8
+          },
+          "discoverEvidence": [
+            "civilian-recovery-charter"
+          ],
+          "districts": {
+            "south": "recovering",
+            "lower": "recovering"
+          }
+        }
+      },
+      {
+        "id": "ending-iron-winter",
+        "label": "Place the city under permanent emergency command",
+        "detail": "Keep the local sun running through surveillance, ration discipline and one chain of authority.",
+        "deltas": {
+          "energy": 15,
+          "food": 5,
+          "order": -15,
+          "population": -5
+        },
+        "note": "The lights stay on. Checkpoints become permanent and the archive is placed under guard. Vale calls it stability; the citizens learn to whisper beneath a functioning artificial dawn.",
+        "requiresFlags": [
+          "final-commitment-security"
+        ],
+        "setFlags": [
+          "act-five-complete",
+          "ending-iron-winter",
+          "permanent-emergency-rule"
+        ],
+        "storyEffects": {
+          "relationships": {
+            "vale": 12,
+            "ilya": -12,
+            "nadia": -8
+          },
+          "districts": {
+            "south": "sealed",
+            "lower": "strained"
+          }
+        }
+      },
+      {
+        "id": "ending-beyond-ridge",
+        "label": "Lead the evacuation toward Hearth-9",
+        "detail": "Move people before the closure sequence, accepting the loss of Vesper as the centre of civilisation.",
+        "deltas": {
+          "food": -10,
+          "energy": -5,
+          "population": 10,
+          "order": -5
+        },
+        "note": "The convoy leaves in staggered groups along the protected ridge route. Not everyone can travel, and Vesper’s skyline recedes behind the storm. Hearth-9 accepts the survivors under the compact—or under a fragile emergency arrangement if the compact was never signed.",
+        "requiresFlags": [
+          "final-commitment-evacuation"
+        ],
+        "setFlags": [
+          "act-five-complete",
+          "ending-beyond-ridge",
+          "evacuation-launched"
+        ],
+        "storyEffects": {
+          "relationships": {
+            "ilya": 8,
+            "jorel": 5,
+            "nadia": 4,
+            "vale": -5
+          },
+          "discoverEvidence": [
+            "final-evacuation-manifest"
+          ],
+          "districts": {
+            "north": "recovering",
+            "core": "sealed"
+          }
+        }
+      },
+      {
+        "id": "ending-last-light",
+        "label": "Force an unverified hard reset",
+        "detail": "Override the remaining interlocks and send one command before the closure window ends.",
+        "deltas": {
+          "energy": -50,
+          "technology": -30,
+          "order": -20,
+          "population": -15
+        },
+        "note": "The command reaches the network without the required reciprocal witness. DAWNLINE triggers its protective closure. The artificial sun fractures into isolated beams; the city’s last chance to recover becomes a record of why the safeguards existed.",
+        "setFlags": [
+          "act-five-complete",
+          "ending-last-light",
+          "dawnline-catastrophic-lockout"
+        ],
+        "storyEffects": {
+          "relationships": {
+            "mara": -10,
+            "elias": -10,
+            "ilya": -10,
+            "nadia": -10,
+            "vale": -5
+          },
+          "discoverEvidence": [
+            "catastrophic-lockout-record"
+          ],
+          "districts": {
+            "core": "sealed",
+            "west": "dark",
+            "north": "sealed"
+          }
+        }
+      }
+    ]
+  }
+]
